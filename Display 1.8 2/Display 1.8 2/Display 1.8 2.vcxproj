@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A88CECBE-8FD0-48CC-B70A-3DBEC588EBCA}</ProjectGuid>
+    <ProjectGuid>{453E8A4A-E837-411A-8F7D-4548FA3705F1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Display18</RootNamespace>
+    <RootNamespace>Display182</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -149,7 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Display 1.8.cpp" />
+    <ClCompile Include="Display 1.8 2.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
