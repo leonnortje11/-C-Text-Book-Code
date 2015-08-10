@@ -1,4 +1,4 @@
-// Display 1.8.cpp : Defines the entry point for the console application.
+// Display 1.8.cpp : A Sample C++ Program
 // A sample C++ Program
 
 #include "stdafx.h"
@@ -11,6 +11,8 @@ int main()
 	int number_of_pods, peas_per_pod, total_peas;
 
 	cout << "Press return after entering a number.\n";
+	// \n = new line format
+
 	cout << "Enter the number of pods:\n";
 
 	cin >> number_of_pods;
