@@ -23,7 +23,14 @@ double unitprice(int length, int width, double price);
 
 int main()
 {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+   
+    int diameter, length, width;
+    double price_round, unit_price_round, price_rectangualr, unitprice_rectangular;
+    
+    cout << "Welcom the the Pizza Consumers Union.\n";
+    cout << "Enter the diameter in inches"
+        << " of a round pizza: ";
+    cin >> diameter;
+    
     return 0;
 }
