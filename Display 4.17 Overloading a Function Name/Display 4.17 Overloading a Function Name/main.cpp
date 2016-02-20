@@ -17,7 +17,28 @@ double ave(double n1, double n2, double n3);
 
 int main()
 {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    cout << "The average of 2.0, 2.5, and 3.0 is "
+    << ave(2.0, 2.5, 3.0) << endl;
+    //Call Overloading function.
+    
+    cout << "The average of 4.5 and 5.5 is "
+    << ave(4.5, 5.5) << endl;
+    //Call Overloading function.
+    
+    
     return 0;
+}
+
+double ave(double n1, double n2)
+//Overloading function with two arguments.
+{
+    return ((n1 + n2)/2.0);
+}
+
+
+double ave(double n1, double n2, double n3)
+//Overloading function with three arguments.
+{
+    return ((n1 + n2 + n3)/3.0);
 }
