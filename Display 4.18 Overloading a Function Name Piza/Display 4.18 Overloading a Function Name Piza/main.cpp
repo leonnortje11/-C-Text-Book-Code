@@ -31,6 +31,10 @@ int main()
     cout << "Enter the diameter in inches"
         << " of a round pizza: ";
     cin >> diameter;
+    cout << "Enter the price of the round pizza: $";
+    cin >> price_round;
+    
+    
     
     return 0;
 }
