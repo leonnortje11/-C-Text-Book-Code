@@ -32,6 +32,8 @@ int main()
                 << "is " << (first + second + third)
                 << endl;
     
+    in_stream.close();
+    out_stream.close();
     
     return 0;
 }
