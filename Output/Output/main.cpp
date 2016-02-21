@@ -16,13 +16,13 @@ int main()
     ifstream in_stream;
     ofstream out_stream;
     
-    in_stream.open("/Users/leon.nortje/infile.dat");
+    in_stream.open("/Users/leon.nortje/Dropbox/UNISA/Code-from-TEXT-Book/Output/Output/infile.dat");
     if (in_stream.fail())
         {
             cout << "Input file open failed.\n";
             exit(1);
         }
-    out_stream.open("/Users/leon.nortje/outfile.dat");
+    out_stream.open("/Users/leon.nortje/Dropbox/UNISA/Code-from-TEXT-Book/Output/Output/outfile.dat");
     
     
     int first, second, third;
