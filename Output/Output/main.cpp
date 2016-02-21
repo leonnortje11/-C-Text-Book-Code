@@ -7,6 +7,7 @@
 //
 
 #include <fstream>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -15,11 +16,21 @@ int main()
     ifstream in_stream;
     ofstream out_stream;
     
-    in_stream.open("infile.dat");
+    in_stream.open("/Users/leon.nortje/infile.dat");
+    if (in_stream.fail())
+        {
+            cout << "Input file open failed.\n";
+            exit(1);
+        }
+    out_stream.open("/Users/leon.nortje/outfile.dat");
     
     
     int first, second, third;
     in_stream >> first >> second >> third;
+    out_stream << "The sum of the first 3\n"
+                << "numbers in the infile.dat\n"
+                << "is " << (first + second + third)
+                << endl;
     
     
     return 0;
