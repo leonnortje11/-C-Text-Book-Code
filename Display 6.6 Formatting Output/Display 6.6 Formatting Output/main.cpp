@@ -11,58 +11,65 @@
 //For cout
 #include <cstdlib>
 //For exit
+#include <iomanip>
+//Required to setw, column width
 
 using namespace std;
+
+void make_neat(ifstream& messy_file, ofstream& neat_file, int number_after_decimal, int field_width);
+//Stream parameters must be call-by-reference
+
 
 int main()
 {
     
-    char in_file_name[16], out_file_name[16];
+    ifstream fin;
+    ofstream fout;
     
-    ifstream in_stream;
-    ofstream out_stream;
+ 
     
-    cout << "I will sum three numbers taken from an input\n"
-    << "file and write the sum to an output file.\n";
-    cout << "Enter the input file name (max 15 characters):\n";
-    cin >> in_file_name;
-    
-    cout << "Enter the output file name (max 15 characters):\n";
-    cin >> out_file_name;
-    
-    cout << "I will read numbers from the file "
-    << in_file_name << " and \n"
-    << "place the sum in the file "
-    << out_file_name << endl;
-    
-    in_stream.open(in_file_name);
-    if (in_stream.fail())
+    fin.open("rawdata.dat");
+    if (fin.fail())
     {
         cout << "Input file open failed.\n";
         exit(1);
     }
     //Check on open file for error.
     
-    out_stream.open(out_file_name);
-    if (out_stream.fail())
+    fout.open("neat.dat");
+    if (fout.fail())
     {
         cout << "Input file open failed.\n";
         exit(1);
     }
     //Check on writing to file for error.
     
-    int first, second, third;
-    in_stream >> first >> second >> third;
-    //Reading content from file.
+  
+    make_neat(fin, fout, 5, 12);
+    //Call the function to fix the file content
     
-    out_stream << "The sum of the first 3\n"
-    << "numbers in the infile.dat\n"
-    << "is " << (first + second + third)
-    << endl;
-    //Writing content to file.
-    
-    in_stream.close();
-    out_stream.close();
+    fin.close();
+    fout.close();
     
     return 0;
+}
+
+void make_neat(ifstream& messy_file, ofstream& neat_file, int number_after_decimal, int field_width)
+//Fix content to new file
+{
+    
+    neat_file.setf(ios::fixed);
+    neat_file.setf(ios::showpoint);
+    neat_file.setf(ios::showpos);
+    neat_file.precision(number_after_decimal);
+    
+    
+    double next;
+    while (messy_file >> next)
+    {
+        cout << setw(field_width) << next << endl;
+        //Write content to screen
+        neat_file << setw(field_width) << next << endl;
+        //Write content to the new file.
+    }
 }
