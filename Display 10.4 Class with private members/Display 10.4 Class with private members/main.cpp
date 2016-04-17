@@ -1,5 +1,4 @@
-//program to demonstrate a very simple example of a class
-//A better version of the class DayOfyear will be given in display 10.4
+//program to demonstrate the class DayOfyear
 
 #include <iostream>
 using namespace std;
@@ -7,36 +6,45 @@ using namespace std;
 class DayOfYear
 {
 public:
+    void input();
     void output();
+    
+    void set(int new_month, int new_day);
+    //Precondition: new_month and new_day form a possible date
+    //postcondition: The date is reset acoording to the arguments
+    
+    int get_month();
+    //Returns the month, 1 for January, 2 for February etc
+    
+    int get_day();
+    //Returns the day of the month
+    
+private
+    void check_date();
     int month;
     int day;
+    
 };
 
 int main()
 {
-    DayOfYear today, birthday;
+    DayOfYear today, batch_birthday;
     
     cout << "Enter today's date:\n";
-    cout << "Enter month as a number: ";
-    cin >> today.month;
-    cout << "Enter the day of the month: ";
-    cin >> today.day;
-    cout << "Enter your birthday:\n";
-    cout << "Enter month as number: ";
-    cin >> birthday.month;
-    cout << "Enter the day of the month: ";
-    cin >> birthday.day;
-    
-    cout << "Today's date is ";
+    today.input();
+    cout << "Todays date is ";
     today.output();
-    cout << "Your birthday is ";
-    birthday.output();
     
-    if (today.month == birthday.month && today.day == birthday.day)
-        cout << "hape Birthday!\n";
+    batch_birthday.set(3, 21);
     
+    cout << "J. S. Bach's birthday is ";
+    batch_birthday.output();
+    
+    if (today.get_day() == batch_birthday.get_month() &&
+        today.get_day() == batch_birthday.get_day())
+        cout << "Happy birthday Johann Sebastian!\n";
     else
-        cout << "Hapy Unbirthday!\n";
+        cout << "Hape Unbirthday Johann Sebastian!\n";
     
     return 0;
     
@@ -46,6 +54,26 @@ int main()
 //Uses iostream:
 void DayOfYear::output()
 {
+    cout << "Enter the month as a number: ";
+    cin >> month;
+    cout << "Enter the day of the month: ";
+    cin >> day;
+    check_date();
+}
+
+void DayOfYear::set(int new_month, int new_day)
+{
     cout << "month = " << month
     << ", day = " << day << endl;
+
 }
+
+void DayOfYear::output()
+{
+    cout << "Enter the month as a number: ";
+    cin >> month;
+    cout << "Enter the day of the month: ";
+    cin >> day;
+    check_date();
+}
+
