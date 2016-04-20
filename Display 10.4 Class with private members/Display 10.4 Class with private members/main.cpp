@@ -19,7 +19,7 @@ public:
     int get_day();
     //Returns the day of the month
     
-private
+private:
     void check_date();
     int month;
     int day;
@@ -40,7 +40,7 @@ int main()
     cout << "J. S. Bach's birthday is ";
     batch_birthday.output();
     
-    if (today.get_day() == batch_birthday.get_month() &&
+    if (today.get_month() == batch_birthday.get_month() &&
         today.get_day() == batch_birthday.get_day())
         cout << "Happy birthday Johann Sebastian!\n";
     else
@@ -61,19 +61,36 @@ void DayOfYear::output()
     check_date();
 }
 
-void DayOfYear::set(int new_month, int new_day)
+void DayOfYear::output()
 {
     cout << "month = " << month
     << ", day = " << day << endl;
-
 }
 
-void DayOfYear::output()
+void DayOfYear::set(int new_month, int new_day)
 {
-    cout << "Enter the month as a number: ";
-    cin >> month;
-    cout << "Enter the day of the month: ";
-    cin >> day;
+    month = new_month;
+    day = new_day;
     check_date();
+
 }
 
+void DayOfYear::check_date()
+{
+    if ((month < 1) || (month > 12) || (day < 1) || (day > 31))
+    {
+        cout << "illegal date. Aborting program.\n";
+        exit(1);
+    }
+}
+
+int DayOfYear::get_month()
+{
+    return month;
+}
+
+
+int DayOfYear::get_day()
+{
+    return day;
+}
