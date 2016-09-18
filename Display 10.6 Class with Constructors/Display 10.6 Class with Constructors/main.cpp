@@ -10,8 +10,29 @@
 using namespace std;
 
 //  Class for a bank account
+class BankAccount
+{
+public:
+    BankAccount(int dollars, int cents, double rate);
+    //Initializes the accout balance to $dollars.cents and
+    //initializes the interest rate to rate percent.
+    
+    BankAccount(int dollars, double rate0);
+    //Initializes the account balance to $dollar.00 and
+    //initializes the interest rate to rate percent.
+    
+    BankAccount();
+    //Initializes the account balance to $0.00
+    //and the interest rate to 0.00%
+    
+    void set(int dollars, int cents, double rate);
+    //
+    
+};
 
-int main(int argc, const char * argv[]) {
+int main()
+
+{
     // insert code here...
     std::cout << "Hello, World!\n";
     return 0;
