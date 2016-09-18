@@ -1,8 +1,10 @@
+//Display 10.3 Class with a Member Function
 //Program to demonstrate a very simple example of a class.
 //A better version of the class DayOfYear will be given in Display 10.4.
 
 #include <iostream>
     using namespace std;
+
     class DayOfYear
     {
     public:
