@@ -44,7 +44,7 @@ public:
     //Returns the current account interest rate as a percentage.
     
     void output(ostream$ outs);
-    //
+    //Precondition
     
 };
 
