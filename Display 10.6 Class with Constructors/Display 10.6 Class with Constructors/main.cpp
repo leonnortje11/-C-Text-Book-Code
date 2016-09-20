@@ -26,6 +26,24 @@ public:
     //and the interest rate to 0.00%
     
     void set(int dollars, int cents, double rate);
+    //Postcondition: The account balance has been set to $dollars.cents;
+    //The interest rate has been set to rate percent.
+    
+    void set(int dollars, double rate);
+    //Postcondition: The account balance has been set to $dollars.00.
+    //The interest rate has been set to rate percent.
+    
+    void update();
+    //Postcondition: One year of simple interest has been added
+    //to the account balance
+    
+    double get_balance();
+    //returns the correct account balance.
+    
+    double get_rate();
+    //Returns the current account interest rate as a percentage.
+    
+    void output(ostream$ outs);
     //
     
 };
