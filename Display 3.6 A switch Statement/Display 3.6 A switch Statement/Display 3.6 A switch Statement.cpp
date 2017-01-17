@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-	char grade;
+	char grade, enter;
 	cout << "Enter your midterm grade and press Return: ";
 	cin >> grade;
 
@@ -29,6 +29,9 @@ int main()
 	}
 
 	cout << "End of program.\n";
+
+	cout << "Enter any character to exit program\n";
+	cin >> enter;
 	
 	return 0;
 }
