@@ -64,5 +64,7 @@ int main()
     in_stream.close();
     out_stream.close();
     
+    system("pause");
+    
     return 0;
 }
