@@ -20,6 +20,9 @@ int main()
 	} while (ans == 'y' || ans == 'Y');
 
 	cout << "Good-bye\n";
+
+	system("pause");
+
 	return 0;
 }
 

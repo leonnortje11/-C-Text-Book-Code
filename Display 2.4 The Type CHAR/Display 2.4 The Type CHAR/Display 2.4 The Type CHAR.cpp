@@ -1,5 +1,4 @@
 // Display 2.4 The Type CHAR.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
 #include <iostream>
@@ -20,6 +19,10 @@ int main()
 	symbol3 = ' ';
 	cout << symbol1 << symbol3 << symbol2 << endl;
 	cout << "Thats all.";
-    return 0;
+
+	system("pause");
+
+	return 0;
+
 }
 

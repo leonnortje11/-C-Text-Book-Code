@@ -1,5 +1,4 @@
 // Display 2.8 An if-else Statement.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
 #include <iostream>
@@ -29,6 +28,8 @@ int main()
 	cout << "Hours = " << hours << endl;
 	cout << "Hours pay rate = R" << rate << endl;
 	cout << "Gross pay = R" << gross_pay << endl;
+
+	system("pause");
 	
 	return 0;
 }

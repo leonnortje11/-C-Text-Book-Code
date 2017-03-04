@@ -1,5 +1,5 @@
 // Display 2.12 A while Loop.cpp : Defines the entry point for the console application.
-//
+
 
 #include "stdafx.h"
 #include <iostream>
@@ -21,6 +21,8 @@ int main()
 
 	cout << endl;
 	cout << "Thats all!\n";
+
+	system("pause");
 
 	return 0;
 }

@@ -27,6 +27,9 @@ int main()
 	cout.setf(ios::showpoint);
 	cout.precision(2);
 	cout << "your balance duw will be R" << balance << endl;
+
+	system("pause");
+
 	return 0;
 }
 

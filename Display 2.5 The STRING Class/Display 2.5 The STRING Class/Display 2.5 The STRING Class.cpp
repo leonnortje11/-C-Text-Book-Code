@@ -22,6 +22,8 @@ int main()
 
 	cout << "The name of your alter ego is ";
 	cout << alter_ego_name << "." << endl;
+
+	system("pause");
 	
 	return 0;
 }

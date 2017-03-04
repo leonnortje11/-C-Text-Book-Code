@@ -28,6 +28,9 @@ int main()
 		cout << "You dont have a fever.\n";
 		cout << "Go study.\n";
 	}
+
+	system("pause");
+
 	return 0;
 }
 

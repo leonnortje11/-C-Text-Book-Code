@@ -1,5 +1,4 @@
 // Display 3.4 Importance of Braces.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
 #include <iostream>
@@ -32,6 +31,7 @@ int main()
 		else
 			cout << "Fuel over 3/4. Dont stop now!\n";
 
+	system("pause");
 
 	return 0;
 }
