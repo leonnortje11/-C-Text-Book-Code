@@ -1,5 +1,4 @@
 // Display 3.10 The Increment operator as an Expression.cpp : Defines the entry point for the console application.
-//
 
 #include "stdafx.h"
 #include <iostream>
@@ -27,6 +26,8 @@ int main()
 
 	cout << "Total calories eaten today = "
 		<< total_calories << endl;
+
+	system("pause");
 
 	return 0;
 }

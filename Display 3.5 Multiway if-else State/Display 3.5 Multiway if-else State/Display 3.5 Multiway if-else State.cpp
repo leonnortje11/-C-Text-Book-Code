@@ -1,5 +1,5 @@
 // Display 3.5 Multiway if-else Statement.cpp : Defines the entry point for the console application.
-//
+
 
 #include "stdafx.h"
 #include <iostream>
@@ -35,6 +35,8 @@ int main()
 
 	cout << "Net income = R" << net_income << endl
 		<< "Tax bill = R" << tax_bill << endl;
+
+	system("pause");
 
 	return 0;
 }
