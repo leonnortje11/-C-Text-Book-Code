@@ -1,5 +1,5 @@
 // Display 4.3 A Function Definition.cpp : Defines the entry point for the console application.
-//
+
 
 #include "stdafx.h"
 #include <iostream>
@@ -31,6 +31,8 @@ int main()
 		<< "R" << price << "each.\n"
 		<< "Final bill, including tax, is R" << bill
 		<< endl;
+
+	system("pause");
 
 	return 0;
 }
