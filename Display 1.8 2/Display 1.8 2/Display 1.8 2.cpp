@@ -32,6 +32,8 @@ int main()
 	cout << total_peas;
 	cout << " peas in all the pods.\n";
 
+	system("pause");
+
 	return 0;
 }
 
