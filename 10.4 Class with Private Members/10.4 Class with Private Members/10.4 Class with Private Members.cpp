@@ -1,7 +1,7 @@
 //DISPLAY 10.4 Class with Private Members
 //Program to demonstrate the class DayOfYear.
 
-//#include "stdafx.h"
+#include "stdafx.h"
 #include <iostream>
 using namespace std;
 

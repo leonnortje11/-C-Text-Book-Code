@@ -9,10 +9,14 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, const char * argv[])
+int main()
 {
     // insert code here...
     cout << "Hello, World!\n";
+    
+    cout << "test\n";
+    
+    
     
     system("pause");
     
