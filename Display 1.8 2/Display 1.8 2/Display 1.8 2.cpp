@@ -33,6 +33,7 @@ int main()
 	cout << " peas in all the pods.\n";
 
 	system("pause");
+	//pause the application
 
 	return 0;
 }
