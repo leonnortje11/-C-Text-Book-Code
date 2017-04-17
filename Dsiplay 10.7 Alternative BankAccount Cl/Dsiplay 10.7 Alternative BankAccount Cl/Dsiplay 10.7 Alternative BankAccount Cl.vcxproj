@@ -23,7 +23,7 @@
     <ProjectGuid>{DDAB317E-D385-47A2-92D8-DF48AC6FD719}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Dsiplay107AlternativeBankAccountCl</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
