@@ -44,7 +44,7 @@ int main()
 	else
 		cout << "Happy Unbirthday Johann Sebastian!\n";
 
-	system("pause");
+	//system("pause");
 
 	return 0;
 }
